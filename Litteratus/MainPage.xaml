@@ -1,0 +1,15 @@
+﻿<Page x:Class="Litteratus.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="using:Litteratus"
+      Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+  <ScrollViewer>
+    <StackPanel
+          HorizontalAlignment="Center"
+          VerticalAlignment="Center">
+      <TextBlock AutomationProperties.AutomationId="HelloTextBlock"
+            Text="Salve, Litteratus!"
+            HorizontalAlignment="Center" />
+    </StackPanel>
+  </ScrollViewer>
+</Page>
