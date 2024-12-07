@@ -52,5 +52,10 @@ public sealed partial class MainPage : Page
             TimerTextBlock.Text = DateTime.Now.ToString("HH:mm:ss");
         });
     }
+
+    /*public async Task GoToLibrary()
+    {
+        return await INavigate(); 
+    }*/
 }
 

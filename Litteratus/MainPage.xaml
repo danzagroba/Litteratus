@@ -2,7 +2,8 @@
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:local="using:Litteratus"
-      Background="Black">
+      Background="Black"
+      Foreground="White">
     
     <ScrollViewer>
         <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
