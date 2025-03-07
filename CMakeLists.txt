@@ -9,7 +9,10 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# For portability, searches for Qt6, or Qt5 if this fails.
+# Then the version found (5 or 6) is referenced as QT_VERSION_MAJOR.
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets LinguistTools Pdf)
+# It might be best to just use Qt6 instead, as the PDF module has been updated.
 find_package(Qt6 6.5 REQUIRED COMPONENTS Pdf)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets LinguistTools)
 
@@ -36,17 +39,17 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
 
     qt_create_translation(QM_FILES ${CMAKE_SOURCE_DIR} ${TS_FILES})
 else()
-    if(ANDROID)
-        add_library(Litteratus SHARED
-            ${PROJECT_SOURCES}
-        )
+#    if(ANDROID)
+#        add_library(Litteratus SHARED
+#            ${PROJECT_SOURCES}
+#        )
 # Define properties for Android with Qt 5 after find_package() calls as:
 #    set(ANDROID_PACKAGE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/android")
-    else()
-        add_executable(Litteratus
-            ${PROJECT_SOURCES}
-        )
-    endif()
+#    else()
+    add_executable(Litteratus
+    ${PROJECT_SOURCES}
+    )
+#    endif()
 
     qt5_create_translation(QM_FILES ${CMAKE_SOURCE_DIR} ${TS_FILES})
 endif()
