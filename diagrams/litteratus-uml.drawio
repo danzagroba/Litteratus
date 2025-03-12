@@ -32,18 +32,18 @@
         <mxCell id="zkfFHV4jXpPFQw0GAbJ--24" value="&lt;&lt;create&gt;&gt; +Library&#xa;&lt;&lt;destroy&gt;&gt; ~Library&#xa;+ addBook (book *b, int list): void&#xa;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Helvetica;fontSize=12;fontColor=default;fontStyle=0;" parent="zkfFHV4jXpPFQw0GAbJ--17" vertex="1">
           <mxGeometry y="118" width="210" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="RwMerwhYPNJ7g_DpqmrL-2" value="&lt;&lt;Singleton&gt;&gt; Main" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#FF0000;strokeColor=#b85450;swimlaneFillColor=#FFE599;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="RwMerwhYPNJ7g_DpqmrL-2" value="&lt;&lt;Singleton&gt;&gt; Litteratus" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#FF0000;strokeColor=#b85450;swimlaneFillColor=#FFE599;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="80" y="80" width="160" height="188" as="geometry">
             <mxRectangle x="230" y="140" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="RwMerwhYPNJ7g_DpqmrL-3" value="- mainLibrary: Library" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Helvetica;fontSize=12;fontColor=default;fontStyle=0;" vertex="1" parent="RwMerwhYPNJ7g_DpqmrL-2">
+        <mxCell id="RwMerwhYPNJ7g_DpqmrL-3" value="- theLibrary: Library" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Helvetica;fontSize=12;fontColor=default;fontStyle=0;" vertex="1" parent="RwMerwhYPNJ7g_DpqmrL-2">
           <mxGeometry y="26" width="160" height="44" as="geometry" />
         </mxCell>
         <mxCell id="RwMerwhYPNJ7g_DpqmrL-4" value="" style="line;html=1;strokeWidth=1;align=center;verticalAlign=top;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;rounded=0;shadow=0;strokeColor=#b85450;swimlaneFillColor=#FFE599;fontFamily=Helvetica;fontSize=12;fontColor=default;fontStyle=0;fillColor=#FF0000;" vertex="1" parent="RwMerwhYPNJ7g_DpqmrL-2">
           <mxGeometry y="70" width="160" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="RwMerwhYPNJ7g_DpqmrL-5" value="&lt;&lt;create&gt;&gt; -Library()&#xa;&lt;&lt;destroy&gt;&gt; ~Library()&#xa;- getLib: *Library()&#xa;- execute (): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Helvetica;fontSize=12;fontColor=default;fontStyle=0;" vertex="1" parent="RwMerwhYPNJ7g_DpqmrL-2">
+        <mxCell id="RwMerwhYPNJ7g_DpqmrL-5" value="&lt;&lt;create&gt;&gt; -Litteratus()&#xa;&lt;&lt;destroy&gt;&gt; ~Litteratus()&#xa;+ initLitteratus: *Litteratus&#xa;+ execute (): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Helvetica;fontSize=12;fontColor=default;fontStyle=0;" vertex="1" parent="RwMerwhYPNJ7g_DpqmrL-2">
           <mxGeometry y="90" width="160" height="80" as="geometry" />
         </mxCell>
         <mxCell id="RwMerwhYPNJ7g_DpqmrL-6" value="" style="endArrow=openThin;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;startFill=1;endFill=0;startArrow=diamondThin;targetPerimeterSpacing=0;sourcePerimeterSpacing=0;endSize=12;startSize=12;fillColor=#60a917;strokeColor=#00FF00;strokeWidth=2;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="RwMerwhYPNJ7g_DpqmrL-3" target="zkfFHV4jXpPFQw0GAbJ--18">
