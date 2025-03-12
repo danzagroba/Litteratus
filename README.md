@@ -1,4 +1,6 @@
 # Litteratus (W.I.P.)
+<img align="left" alt="LOGO" style="padding-bottom:60px" src="./images/logo.png" />
+
 ### Goals
 Litteratus shall be a lightweight PDF reader and digital library, made with Qt and C++.
 We will proceed by first making the general C++ code, according to the diagram below (W.I.P.), and then integrating it into Qt.
